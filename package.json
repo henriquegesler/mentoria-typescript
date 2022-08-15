@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lite-server",
-    "watch": "tsc --watch"
+    "start": "npm run build -- -w",
+    "watch": "tsc --watch",
+    "build" : "tsc -p ."
   },
   "author": "",
   "license": "ISC",
